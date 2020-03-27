@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Baloo 2', cursive;
+  background-color: #a7ff83;
+}
+
+header,
+footer {
+  width: 100%;
+  background-color: #17b978;
+  color: #071a52;
+}
+
+.container {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #086972;
+  border-radius: 8px;
+  margin: 20px auto;
+  width: 90vw;
+  flex-direction: column;
+  -webkit-box-shadow: 1px 2px 35px 18px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 1px 2px 35px 18px rgba(0, 0, 0, 0.49);
+  box-shadow: 1px 2px 35px 18px rgba(0, 0, 0, 0.49);
+}
+
+#svg-container {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+svg {
+  fill: #a7ff83;
+}
+
+#tooltip {
+  position: absolute;
+  display: none;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.source {
+  font-size: 0.8rem;
+  color: #a7ff83;
+}
+
+.bar:hover {
+  fill: #17b978;
+}
+
+.domain {
+  stroke: #a7ff83;
+}
+
+.tick text {
+  fill: #a7ff83;
+}
+
+.tick line {
+  stroke: #a7ff83;
+}
+
+@media (max-width: 450px) {
+  .source {
+    font-size: 0.5rem;
+  }
+}
